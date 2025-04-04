@@ -106,7 +106,7 @@ class Vision(Node):
         self.control = True
         #start turning based on the offset to look at the blue box
         #offset had the side of the screen that the blue box is on
-        self.velocity.angular.z = 0.0003 * -self.offset
+        self.velocity.angular.z = 0.0002 * -self.offset
         self.twist_publisher.publish(self.velocity)
         self.get_logger().info("Started orientation")
 
